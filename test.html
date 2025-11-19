@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Struktur Organisasi MI An-Nur</title>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+      text-align: center;
+      padding: 30px;
+    }
+
+    h1 {
+      color: #155e21;
+      margin-bottom: 40px;
+      font-size: 24px;
+    }
+
+    .org-chart {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 25px;
+    }
+
+    .level {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .box {
+      background-color: #ffffff;
+      border: 2px solid #155e21;
+      border-radius: 10px;
+      padding: 12px 16px;
+      min-width: 180px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+      transition: transform 0.2s ease;
+    }
+
+    .box:hover {
+      transform: scale(1.05);
+    }
+
+    .title {
+      font-weight: bold;
+      color: #155e21;
+    }
+
+    .name {
+      font-size: 14px;
+      margin-top: 4px;
+    }
+
+    /* warna khusus */
+    .green { background-color: #e6f4ea; }
+    .blue { background-color: #e3f2fd; }
+    .yellow { background-color: #fff8e1; }
+    .orange { background-color: #ffecb3; }
+    .red { background-color: #fdecea; }
+    .grey { background-color: #f0f0f0; }
+  </style>
+</head>
+<body>
+
+  <h1>STRUKTUR ORGANISASI MADRASAH IBTIDAIYAH AN-NUR<br>TAHUN PELAJARAN 2025/2026</h1>
+
+  <div class="org-chart">
+
+    <!-- Yayasan -->
+    <div class="level">
+      <div class="box green">
+        <div class="title">Ketua Yayasan</div>
+        <div class="name">Drs. H. Badnil Aini, M.M.</div>
+      </div>
+      <div class="box green">
+        <div class="title">Wakil Ketua Yayasan</div>
+        <div class="name">Vina Aini Salsabila, M.Pd.</div>
+      </div>
+    </div>
+
+    <!-- Kepala Sekolah -->
+    <div class="level">
+      <div class="box blue">
+        <div class="title">Kepala Sekolah</div>
+        <div class="name">Wiwi Sariyah Alawiah, S.Pd.I, M.M.</div>
+      </div>
+    </div>
+
+    <!-- Koordinator Bidang -->
+    <div class="level">
+      <div class="box yellow">
+        <div class="title">Koord. Bid. Sarpras</div>
+        <div class="name">Rival Muhammad Sayid, S.Kom.<br>Ilham Hadiansyah</div>
+      </div>
+      <div class="box yellow">
+        <div class="title">Koord. Bid. Humas</div>
+        <div class="name">Astri Syifa Nur Atizah</div>
+      </div>
+      <div class="box yellow">
+        <div class="title">Koord. Bid. Kesiswaan</div>
+        <div class="name">Rika Putriani, S.Pd.<br>Putri Sobarah, S.Pd.</div>
+      </div>
+      <div class="box yellow">
+        <div class="title">Koord. Bid. Kurikulum</div>
+        <div class="name">Nuri Mutiran Sani, S.Pd.<br>Cici Siti Masitoh, S.Pd.</div>
+      </div>
+    </div>
+
+    <!-- Ekstrakurikuler -->
+    <div class="level">
+      <div class="box orange">
+        <div class="title">Ekstrakurikuler Pramuka</div>
+        <div class="name">Baihaqi, S.Pd.I</div>
+      </div>
+      <div class="box orange">
+        <div class="title">Ekstrakurikuler Tahfidz</div>
+        <div class="name">A. Qusyairi</div>
+      </div>
+      <div class="box orange">
+        <div class="title">Ekstrakurikuler Silat SMI</div>
+        <div class="name">Rival Muhammad Sayid, S.Kom.</div>
+      </div>
+    </div>
+
+    <!-- Peserta Didik -->
+    <div class="level">
+      <div class="box grey">
+        <div class="title">Peserta Didik</div>
+        <div class="name">Seluruh siswa MI An-Nur</div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Struktur Organisasi MI An-Nur 2025/2026</title>
+<style>
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f5f7fa;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.container {
+  overflow-x: auto;
+  overflow-y: auto;
+  white-space: nowrap;
+  height: 100vh;
+  padding: 2rem;
+}
+.timeline {
+  display: flex;
+  align-items: flex-start;
+  gap: 3rem;
+  padding-bottom: 5rem;
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.section::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -1.5rem;
+  width: 3rem;
+  height: 2px;
+  background: #ccc;
+}
+.section:last-child::after {
+  display: none;
+}
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  margin-bottom: 1rem;
+  text-align: center;
+  transition: 0.3s;
+  width: 200px;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+.card h3 {
+  font-size: 1rem;
+  margin: 0;
+  color: #333;
+}
+.card p {
+  font-size: 0.85rem;
+  color: #555;
+  margin: 0.3rem 0 0;
+}
+
+/* Warna level */
+.yayasan { background: #d6f5ff; }
+.kepala { background: #c6f5d3; }
+.koor { background: #ffe8b3; }
+.guru { background: #fff5d6; }
+.ekstra { background: #f7c6c6; }
+.siswa { background: #d0f5c1; }
+
+/* Judul */
+header {
+  text-align: center;
+  padding: 1rem;
+}
+header h1 {
+  font-size: 1.4rem;
+  margin: 0.3rem 0;
+}
+header p {
+  margin: 0;
+  color: #777;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .timeline {
+    flex-direction: column;
+    align-items: center;
+  }
+  .section::after {
+    display: none;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <img src="logo.png" alt="Logo MI An-Nur" width="80" />
+  <h1>STRUKTUR ORGANISASI</h1>
+  <p>Madrasah Ibtidaiyah An-Nur<br>Tahun Pelajaran 2025/2026</p>
+</header>
+
+<div class="container">
+  <div class="timeline">
+
+    <!-- YAYASAN -->
+    <div class="section">
+      <div class="card yayasan">
+        <h3>Ketua Yayasan</h3>
+        <p>Drs. H. Bahrul Anin, M.M.</p>
+      </div>
+      <div class="card yayasan">
+        <h3>Wakil Ketua Yayasan</h3>
+        <p>Vivin Aini Salsabila, M.Pd.</p>
+      </div>
+      <div class="card kepala">
+        <h3>Kepala Sekolah</h3>
+        <p>Wira Septa Alamsah, S.Pd.I., M.M.</p>
+      </div>
+      <div class="card kepala">
+        <h3>Komite Sekolah</h3>
+        <p>Ilham Nurbayudi, S.Pd.I.</p>
+      </div>
+    </div>
+
+    <!-- KOORDINATOR -->
+    <div class="section">
+      <div class="card koor">
+        <h3>Koord. KBM & RARAPAS</h3>
+        <p>Fandi Muhammad Syaef, S.Kom</p>
+      </div>
+      <div class="card koor">
+        <h3>Koord. Kesiswaan</h3>
+        <p>Neni Marliana, S.Pd</p>
+      </div>
+      <div class="card koor">
+        <h3>Koord. Bid. Kurikulum</h3>
+        <p>Cici Siti Munalah, S.Pd</p>
+      </div>
+    </div>
+
+    <!-- DEWAN GURU -->
+    <div class="section">
+      <div class="card guru"><h3>Guru Kelas 1A</h3><p>Cici Siti Munalah, S.Pd</p></div>
+      <div class="card guru"><h3>Guru Kelas 1B</h3><p>Neni Marliana, S.Pd</p></div>
+      <div class="card guru"><h3>Guru Kelas 2A</h3><p>Dina Ayu Fitrias, S.Pd.I</p></div>
+      <div class="card guru"><h3>Guru Kelas 3A</h3><p>Imas Nurhasanah, S.Pd.I</p></div>
+      <div class="card guru"><h3>Guru Kelas 6A</h3><p>Rizal Muhammad Syaef, S.Kom</p></div>
+    </div>
+
+    <!-- EKSTRAKURIKULER -->
+    <div class="section">
+      <div class="card ekstra"><h3>Pramuka</h3><p>Ridwan, S.Pd.I</p></div>
+      <div class="card ekstra"><h3>Marching Band</h3><p>Rakhmad, S.Pd</p></div>
+      <div class="card ekstra"><h3>English Club</h3><p>Ali Yulianto</p></div>
+      <div class="card ekstra"><h3>Kaligrafi</h3><p>Dani Fadilah</p></div>
+    </div>
+
+    <!-- PESERTA DIDIK -->
+    <div class="section">
+      <div class="card siswa">
+        <h3>Peserta Didik</h3>
+        <p>Seluruh siswa-siswi MI An-Nur</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
